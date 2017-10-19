@@ -1,7 +1,7 @@
 # Hangman Game #node.js #contructors #CLI
 
 ## Overview
-This application build Hangman Game played in command-line using constructor functions.
+Application builds the Hangman Game that is played in command-line. The code uses constructor functions.
 
 ## How to play
 - user guesses the randomly generated word by guessing letters step-by-step
