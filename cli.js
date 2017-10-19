@@ -4,7 +4,6 @@ var Word = require('./word');
 // creates the newWord orject/ instance of the Word Constructor
 var newWord = new Word();
 
-
 function playGame() {
     // recursion: user plays while the word is guessed
     if (newWord.isTheWordGuessed() === false) {
@@ -36,8 +35,8 @@ function playGame() {
                 // if user losses all the lives
                 if (newWord.lives === 0) {
                     console.log(`--------------------------\n` +
-                        		`You lost all your lives!"\n`.blue +
-                       			`--------------------------\n`);
+                                `You lost all your lives!"\n`.blue +
+                                `--------------------------\n`);
                     // prompts the user if they would like
                     // to play again or end the game
                     playAgain();
@@ -51,8 +50,8 @@ function playGame() {
         });
     } else { // if word is guessed
         console.log(`--------------------------\n` +
-            		`BRAVO! You guessed the word!"\n`.rainbow +
-            		`--------------------------\n`);
+                    `BRAVO! You guessed the word!"\n`.rainbow +
+                    `--------------------------\n`);
         // next word is given
         newWord.pushLetterObj();
         newWord.displayWord();
@@ -60,11 +59,9 @@ function playGame() {
     }
 }
 
-
 function stopGame() {
     return process.exit(-1);
 }
-
 
 function playAgain() {
     // prompts the user if they would like to Play Again or Exit Game
@@ -91,7 +88,6 @@ function playAgain() {
 
     });
 }
-
 
 // builds the array of letter object
 newWord.pushLetterObj();
